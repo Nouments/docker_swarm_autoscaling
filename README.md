@@ -83,7 +83,7 @@ Le service `worker.py` applique les commandes d'autoscaling envoyées par le man
 
 #### Etapes :
 
-1. CrÃ©ez un fichier de service pour le worker :
+1. Créez un fichier de service pour le worker :
 
 ```bash
 sudo nano /etc/systemd/system/autoscaler-worker.service
@@ -130,7 +130,7 @@ sudo systemctl enable autoscaler-worker
 
 ### 3. Vérification des services
 
-Pour vÃ©rifier si les services fonctionnent correctement, utilisez les commandes suivantes :
+Pour vérifier si les services fonctionnent correctement, utilisez les commandes suivantes :
 
 - Vérifiez l'état du service `manager` :
 
