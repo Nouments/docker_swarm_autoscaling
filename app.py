@@ -3,7 +3,7 @@ import subprocess
 
 app = Flask(__name__)
 
-SERVICE_NAME = '<nom du service que vous ciblez>'
+SERVICE_NAME = '<service-cible>'
 INITIAL_REPLICAS = 4  # Nombre de réplicas initiaux  minimal dnas votre service
 MAX_SURPLUS_REPLICAS = 6  #Nombre maximal de reolicas que l'autoscaling peut  ajouter
 surplus_replicas = 0  # Surplus de réplicas actuels (initialisé à 0)
@@ -45,4 +45,4 @@ def handle_scaling():
     return f"Aucune action nécessaire. Nombre actuel de réplicas : {current_replicas}.", 200
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=20000)
+    app.run(host='0.0.0.0', port='<manager-port>')
